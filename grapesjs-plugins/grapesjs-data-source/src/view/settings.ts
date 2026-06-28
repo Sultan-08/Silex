@@ -1,12 +1,13 @@
 import { createRef, Ref, ref } from 'lit/directives/ref.js'
 import {repeat} from 'lit/directives/repeat.js'
 import GraphQL, { GraphQLOptions, GraphQLBackendType, LightweightType } from '../datasources/GraphQL'
-import { COMMAND_ADD_DATA_SOURCE, DATA_SOURCE_CHANGED, DATA_SOURCE_DATA_LOAD_END, DATA_SOURCE_ERROR, DATA_SOURCE_READY, DataSourceEditorViewOptions, IDataSource } from '../types'
+import { COMMAND_ADD_DATA_SOURCE, DATA_SOURCE_CHANGED, DATA_SOURCE_DATA_LOAD_END, DATA_SOURCE_ERROR, DATA_SOURCE_READY, DataSourceEditorViewOptions } from '../types'
+import type { IDataSource } from '../types'
 import { getDefaultOptions, getElementFromOption } from '../utils'
 import { getAllDataSources, addDataSource, removeDataSource } from '../model/dataSourceRegistry'
 import { css, html, LitElement, render, TemplateResult } from 'lit'
 import { property, state } from 'lit/decorators.js'
-import { Editor } from 'grapesjs'
+import type { Editor } from 'grapesjs'
 
 const COMMON_STYLES = css`
     :host {

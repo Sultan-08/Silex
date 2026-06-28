@@ -23,7 +23,7 @@ import { PROPERTY_STYLES } from './defaultStyles'
 import { DATA_SOURCE_CHANGED, DATA_SOURCE_DATA_LOAD_END, Filter, FIXED_TOKEN_ID, Property, Token } from '../types'
 import { fromString, getFixedToken, getTokenDisplayName, groupByType, toExpression, toId, toValue } from '../utils'
 import { ExpressionInput, PopinForm } from '@silexlabs/expression-input'
-import { Component, Editor } from 'grapesjs'
+import type { Component, Editor } from 'grapesjs'
 
 import '@silexlabs/expression-input'
 import { getCompletion } from '../model/completion'
