@@ -7,7 +7,8 @@
     "module": "ESNext",
     "removeComments": false,
     "experimentalDecorators": true,
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "ignoreDeprecations": "5.0"
   },
   "include": [
     "editor/**/*.ts",
